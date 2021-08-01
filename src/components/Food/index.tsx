@@ -1,4 +1,4 @@
-import { Component, useState } from 'react';
+import { useState } from 'react';
 import { FiEdit3, FiTrash } from 'react-icons/fi';
 
 import { Container } from './styles';
@@ -62,7 +62,7 @@ export function Food(props:any)  {
                 id={`available-switch-${food.id}`}
                 type="checkbox"
                 checked={isAvailable}
-                onChange={this.toggleAvailable}
+                onChange={toggleAvailable}
                 data-testid={`change-status-food-${food.id}`}
               />
               <span className="slider" />
